@@ -1,0 +1,29 @@
+/* src/App.css */
+.fas {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.mt-20 {
+  margin-top: 5rem; /* Adjust this value to match the height of your navbar */
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.tab-links.active-link {
+  color: blue;
+  font-weight: bold;
+}
+
