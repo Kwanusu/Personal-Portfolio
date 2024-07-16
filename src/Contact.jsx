@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { FaFacebook, FaInstagram, FaPhone, FaTwitter } from "react-icons/fa";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa6";
+import cvFile from '/sr';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -64,7 +65,7 @@ const Contact = () => {
                 <FaLinkedin style={{color: 'blue', fontSize: '50px'}}/>
               </a>
               </div>
-              <a href='#' download className="btn1 bg-red-500 text-white py-2 px-4 rounded-lg">Download CV</a>
+              <a href={cvFile} download className="btn1 bg-red-500 text-white py-2 px-4 rounded-lg">Download CV</a>
             </div>
             <div className="w-full md:w-1/2">
             <form onSubmit={handleSubmit}>
@@ -95,7 +96,6 @@ const Contact = () => {
                 onChange={handleChange}
                 required
               >
-
               </textarea>
               <button type="submit" className="w-full bg-red-500 text-white py-2 px-4 rounded-lg">Submit</button>
             </form>
@@ -107,5 +107,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-{/* <a href={require("../assets/cv.docx")} */}
